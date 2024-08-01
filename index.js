@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Initialize Cashfree
 Cashfree.XClientId = process.env.CLIENT_ID;
-Cashfree.XClientSecret = process.env.CLIENT_SECRET;
+Cashfree.XClientSecret = process.env.CLIENT_KEY;
 Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
 
 function generateOrderId() {
